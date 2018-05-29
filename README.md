@@ -1,4 +1,4 @@
-#EDプログラミングハンズオン サンプルプログラム.
+#RDプログラミングハンズオン サンプルプログラム.
 
 ## これはなんですか？
 教育用に jonhoo/tetris-tutorial にあったテトリスのプログラムをフォークしてカスタマイズしてみました。
@@ -12,6 +12,7 @@ masterブランチは jonhoo氏が作成したオリジナルのプログラム�
 ## 使い方
 
 各開発環境からこのリポジトリをクローンして使ってみてください。
+
 ```bash
 # git clone https://github.com/killinsun/RD-pg-tetris-tutorial
 ```
@@ -26,7 +27,11 @@ masterブランチは jonhoo氏が作成したオリジナルのプログラム�
 # git checkout 001 //example
 ```
 
+お題の内容は各自に配布した資料を確認してください。
+
+
 以下、オリジナルのREADME.md
+
 ---
 
 
