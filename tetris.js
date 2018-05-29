@@ -125,7 +125,8 @@ Piece.prototype.lock = function() {
 
 			if (this.y + iy < 0) {
 				// Game ends!
-				alert("You're done!");
+				var endMsg = document.getElementById('endMsgDiv');
+				endMsg.textContent = "You're done!";	
 				done = true;
 				return;
 			}
