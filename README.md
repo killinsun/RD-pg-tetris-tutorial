@@ -22,9 +22,16 @@ masterブランチは jonhoo氏が作成したオリジナルのプログラム�
 ### ブランチを切り替えてお題に挑戦する
 
 ```bash
+# git branch -a 
+* master
+  remotes/origin/001
+  remotes/origin/001-answer
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
 # git checkout [ブランチ名]
 
-# git checkout 001 //example
+# git checkout remotes/origin/001 //example
 ```
 
 お題の内容は各自に配布した資料を確認してください。(予定)
@@ -35,13 +42,13 @@ masterブランチは jonhoo氏が作成したオリジナルのプログラム�
 コードのブランチに切り替える事が出来ます。
 
 ```bash
-# git checkout 001-answer //001の答えのブランチ
+# git checkout remotes/origin/001-answer //001の答えのブランチ
 ```
 
 gitの機能で、お題と答えの差分が簡単にわかるチートを使いたいですか？
 
 ```bash
-# git diff 001 001-answer //答えではどのように書いたのか差分を表示
+# git diff remotes/origin/001 remotes/origin/001-answer //答えではどのように書いたのか差分を表示
 ```
 
 ### お題の内容は残したまま、お題に挑戦したい（日本語不自由)
@@ -49,12 +56,12 @@ gitの機能で、お題と答えの差分が簡単にわかるチートを使�
 そんな時は作業用のブランチを作りましょう。
 
 ```bash
-# git checkout 001  //001に挑戦する
+# git checkout remotes/origin/001  //001に挑戦する
 # git checkout -b 001-work //ソースコードを弄りたいのでブランチを作成してみる
 # touch hoge.txt    //ソースコードを弄る 
 # git add . 
 # git commit -m "001に挑戦した"
-# git checkout 001 //オリジナルのソースコードのブランチ戻る
+# git checkout remotes/origin/001 //オリジナルのソースコードのブランチ戻る
 # git checkout 001-work //編集したソースコードのブランチに戻る
 ```
 
